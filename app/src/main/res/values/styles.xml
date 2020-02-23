@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--remove White screen is displayed while switching between Activities-->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="FragmentTitle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/cairo_bold</item>
+    </style>
+
+    <style name="CalendarDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+</resources>

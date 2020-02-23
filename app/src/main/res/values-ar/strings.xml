@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flora Driver</string>
+    <string name="generalError">لقد حدث خطأ ما , يرجي المحاولة في وقت لاحق</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgetPassword">نسيت كلمة المرور؟</string>
+    <string name="from">من</string>
+    <string name="to">إلي</string>
+    <string name="vendorAddress">عنوان البائع:</string>
+    <string name="clientAddress">عنوان العميل:</string>
+    <string name="changeStatus">تغيير حالة الطلب</string>
+    <string name="filter">فلتر</string>
+    <string name="delivered">تم التوصيل</string>
+    <string name="shipped">تم التجهيز</string>
+    <string name="searchWith">البحث برقم أو إسم الطلب...</string>
+    <string name="noConnection">لا يوجد إتصال بالإنترنت , برجاء التحقق من إتصال الإنترنت أولا</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="lang">ENG</string>
+    <string name="enterEmail">قم بإدخال البريد الإلكتروني</string>
+    <string name="invalidEmail">البريد الإلكتروني غير صحيح</string>
+    <string name="enterPassword">قم بإدخال كلمة المرور</string>
+    <string name="invalidPassword">كلمة المرور غير صحيحة</string>
+    <string name="upcomingOrders">الطلبات الجديدة</string>
+    <string name="currentOrders">سجل الطلبات</string>
+    <string name="noOrdersFound">لا يوجد طلبات متاحة</string>
+    <string name="acceptOrder">قبول الطلب</string>
+    <string name="pieces">piece</string>
+    <string name="selectStartDate">قم بإختيار تاريخ البدء</string>
+    <string name="selectEndDate">قم بإختيار تاريخ النهاية</string>
+    <string name="notShipped">لم يتم شحن الطلب حتي الآن , لا يمكنك قبول الطلب في الوقت الحالي</string>
+    <string name="send">إرسال</string>
+    <string name="checkEmail">تم إرسال طلبك بنجاح قم بمراجعة بريدك الإلكتروني</string>
+    <string name="getDirections">Get Directions</string>
+    <string name="acceptedSuccessfully">تم إضافة الطلب لطلباتك الحالية بنجاح</string>
+    <string name="startDate">تاريخ البداية</string>
+    <string name="endDate">تاريخ النهاية</string>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fragment_product_details_iv_sliderPlaceholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/product_details_noimg" />
+
+        <com.duolingo.open.rtlviewpager.RtlViewPager
+            android:id="@+id/fragment_product_details_vp_slider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusableInTouchMode="true"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_product_details_iv_sliderPlaceholder"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_product_details_iv_sliderPlaceholder"
+            app:layout_constraintStart_toStartOf="@+id/fragment_product_details_iv_sliderPlaceholder"
+            app:layout_constraintTop_toTopOf="@+id/fragment_product_details_iv_sliderPlaceholder" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/fragment_product_details_ci_sliderCircles"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginTop="20dp"
+            app:ci_drawable="@drawable/circle_selected"
+            app:ci_drawable_unselected="@drawable/circle_unselected"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_product_details_vp_slider"
+            app:layout_constraintStart_toStartOf="@+id/fragment_product_details_vp_slider"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_product_details_vp_slider" />
+
+        <TextView
+            android:id="@+id/fragment_product_details_tv_productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="100dp"
+            android:gravity="center"
+            android:text="Product Name Will Be here"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_product_details_ci_sliderCircles" />
+
+        <TextView
+            android:id="@+id/fragment_product_details_tv_productDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/order_details_box"
+            android:padding="10dp"
+            android:text="product Description...."
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_product_details_tv_productName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/textView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/order_details_box"
+            android:padding="10dp"
+            android:text="TextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_product_details_tv_productDescription">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/vendorAddress"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fragment_product_details_tv_vendorAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="60dp"
+                android:text="@string/vendorAddress"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grayDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView24"
+                app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clientAddress"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="@+id/textView24"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toTopOf="@+id/fragment_product_details_tv_clientAddress" />
+
+            <TextView
+                android:id="@+id/fragment_product_details_tv_clientAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/vendorAddress"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grayDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_product_details_tv_vendorAddress"
+                app:layout_constraintStart_toStartOf="@+id/fragment_product_details_tv_vendorAddress"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_product_details_tv_vendorAddress" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/fragment_product_details_tv_pieces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="13piece"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_product_details_tv_totalPrice"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toTopOf="@+id/fragment_product_details_tv_totalPrice" />
+
+        <TextView
+            android:id="@+id/fragment_product_details_tv_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="22.123 KWD"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
